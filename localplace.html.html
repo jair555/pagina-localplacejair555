@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Sitio Web</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#121212;
+    color:white;
+}
+
+/* MENU */
+header{
+    background:#1b1b1b;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.5);
+}
+
+.logo img{
+    width: 50px; /* Ajusta el tamaño */
+    height:auto;
+    display:block;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00c3ff;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#bbb;
+}
+
+/* TARJETAS */
+.contenedor{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:40px;
+    position: relative;
+    
+}
+
+.card{
+    width:300px;
+    background:#1f1f1f;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#bdbdbd;
+}
+
+/* CONTACTO */
+.contacto{
+    text-align:center;
+    padding:50px 20px;
+    background:#1b1b1b;
+}
+
+.contacto h2{
+    margin-bottom:30px;
+}
+
+.iconos{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+}
+
+.icono{
+    font-size:40px;
+    color:#00c3ff;
+    transition:.3s;
+}
+
+.icono:hover{
+    transform:scale(1.2);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#888;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/936e7e79.png" alt="Logotipo">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Lo más buscado</h1>
+    </section>
+
+<section class="contenedor">
+
+
+
+    
+
+    <div class="card">
+	<a href="https://www.facebook.com/ahorason3">
+        <img src="imagenes/3.jpg" alt="">
+        <div class="card-content">
+            <h3>Ahora son 3</h3>
+            <p>Con mas de 20 años de experiencia en el sector gallistico, en ahora son 3 cuidamos la slud,
+                seguridad y rendimiento de tu gallera. somos tu mejor aliado en nutricion, clinica, zootecnica 
+                y bioseguridad
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/Colchones-vi-rey-oficial/100067671741528/?locale=es_LA">
+        <img src="imagenes/colchones.jpg" alt="">
+        <div class="card-content">
+            <h3>Colchones Vi-rey</h3>
+            <p>Tienda de colchones al mayoreo y menudeo. Calidad, confort y los mejores precios para tu descanso</p>
+        </div>
+    </div>
+
+	 <div class="card">
+	<a href="https://www.facebook.com/IlumAgenciaConsultora">
+        <img src="imagenes/ilum.jpg" alt="">
+        <div class="card-content">
+            <h3>ILum</h3>
+            <p>Agencia especializada en marketing digital, con soluciones creativas y estrategicas 
+                para hacer crecer tu marca y conectar con tu publico
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/YushijiroHacienda">
+        <img src="imagenes/yushihiro.jpg" alt=" ">
+        <div class="card-content">
+            <h3>Yushijiro Hacienda</h3>
+            <p>Restaurante de comida japonesa con autenticos sabores, sushi fresco
+                y ambiente tradicional
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/kaisainmobiliaria">
+        <img src="imagenes/kansa.jpg" alt="">
+        <div class="card-content">
+            <h3>Kaisa Soluciones Inmobiliarias</h3>
+            <p>Inmobiliaria confiable que te acompaña en la compra, venta o renta de tu
+                propiedad. Experiencia, seguridad y atencion personalizada en cada paso
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/El-Taconcito/100066615859994/?locale=es_LA">
+        <img src="imagenes/taconazo.jpg" alt="">
+        <div class="card-content">
+            <h3>El taconcito</h3>
+            <p>Taqueria con tacos autenticos y deliciosos, elaborados al momento con
+                ingredientes frescos y sabor tradicional que conquista en cada bocado
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/The-beatledillas/100064103980537/">
+        <img src="imagenes/escarabajos.jpg" alt="">
+        <div class="card-content">
+            <h3>the beatledillas</h3>
+            <p>Cocina de quesadillas y antojos mexicanos con el sabor tradicional que te hará cantar. ¡Ambiente inspirado en The Beatles y comida que conquista paladares!</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/Taqueria-El-Infiernillo/61577661387032/#">
+        <img src="imagenes/diablito.jpg" alt="">
+        <div class="card-content">
+            <h3>Taqueria El Infiernillo</h3>
+            <p>Taquería El Infiernillo en Ojo de Agua te ofrece el auténtico sabor mexicano con cochinita, enchiladas y mucho más. ¡Puro sabor ardiente!</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://logisticatiburonblanco.com/">
+        <img src="imagenes/Logo.jpg" alt="">
+        <div class="card-content">
+            <h3>Logística tiburón blanco</h3>
+            <p>Logística Tiburón Blanco ofrece soluciones eficientes en transporte, distribución y manejo de mercancías. Rapidez, confianza y fuerza que mueve tu negocio.</p>
+        </div>
+    </div>
+
+     <div class="card">
+	<a href="https://www.facebook.com/RestauranteGuille?locale=es_LA">
+        <img src="imagenes/guille.jpg" alt="">
+        <div class="card-content">
+            <h3>Restaurante Guille</h3>
+            <p>Restaurante gourmet que fusiona lo mejor de la cocina mexicana con cortes argentinos premium, en un ambiente elegante y acogedor.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/kefesas">
+        <img src="imagenes/aguas.jpg" alt="">
+        <div class="card-content">
+            <h3>Ke Fresas Ojo de Agua</h3>
+            <p>La marca de fresas con crema más exitosa de México, ahora en su sucursal Ojo de Agua, te invita a disfrutar sus irresistibles preparados. Frescura, sabor y tradición en cada cucharada.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/tacuradaOjoDeAgua">
+        <img src="imagenes/tucu.jpg" alt="">
+        <div class="card-content">
+            <h3>Tacurada Suc Ojo de Agua</h3>
+            <p>Tacurada sucursal Ojo de Agua te ofrece los mejores tacos de mariscos, preparados al momento con sabor auténtico y fresco. ¡Ven y disfruta el verdadero sabor del mar!</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/masvidaysaludoficial/">
+        <img src="imagenes/vidasalud.jpg" alt="">
+        <div class="card-content">
+            <h3>Más Vida y Salud</h3>
+            <p>Enfermería especializada en cuidados de salud, atención a domicilio, control de signos vitales, inyecciones, curaciones y más. Cuidamos de ti con profesionalismo y calidez.</p>
+        </div>
+    </div>
+
+
+ 
+</section>
+
+
+<section class="hero">
+    <h1>Automotriz</h1>
+</section>
+
+
+<section class="contenedor">
+
+    <div class="card">
+	<a href="https://www.facebook.com/cloversanp/">
+        <img src="imagenes/clover.jpg" alt="">
+        <div class="card-content">
+            <h3>Clover San Pedro</h3>
+            <p>Somos la gasolinera con el mejor servicio y los precios más competitivos del mercado. Calidad, confianza y atención que marcan la diferencia.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.grupoindustrialautomotriz.com.mx/">
+        <img src="imagenes/gia.jpg" alt="">
+        <div class="card-content">
+            <h3>Grupo Industrial Automotriz (GIA)</h3>
+            <p>Soluciones en automatización, electrónica y mecánica para la industria automotriz. Ingeniería y tecnología aplicada para procesos industriales.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/MotoresyMultirefacciones/">
+        <img src="imagenes/sr.jpg" alt="">
+        <div class="card-content">
+            <h3>Motores y Multirefacciones (Santa Rosa)</h3>
+            <p>Expertos en venta y servicio de motores para camiones, enfocándose en garantizar que tu unidad resista cualquier camino</p>
+        </div>
+    </div>
+
+    
+</section>
+
+<section class="hero">
+    <h1>Comida y bebida</h1>
+</section>
+
+<section class="contenedor">
+
+    <div class="card">
+	<a href="https://www.facebook.com/YushijiroHacienda">
+        <img src="imagenes/yushihiro.jpg" alt="">
+        <div class="card-content">
+            <h3>Yushijiro Hacienda</h3>
+            <p>Restaurante de comida japonesa con auténticos sabores, sushi fresco y ambiente tradicional.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/F%C3%A1brica-De-Hielo-Tonanitla/61574092701131/">
+        <img src="imagenes/tona.jpg" alt="">
+        <div class="card-content">
+            <h3>Fabrica De Hielo</h3>
+            <p>Fábrica de hielo purificado en cubos y barra. Producción constante, calidad garantizada y entregas puntuales para tu negocio o evento.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/El-Taconcito/100066615859994/?locale=es_LA">
+        <img src="imagenes/taconazo.jpg" alt="">
+        <div class="card-content">
+            <h3>El Taconcito</h3>
+            <p>Taquería con tacos auténticos y deliciosos, elaborados al momento con ingredientes frescos y sabor tradicional que conquista en cada bocado.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/yushijiroacueducto/">
+        <img src="imagenes/yushihiro.jpg" alt="">
+        <div class="card-content">
+            <h3>Yushijiro Acueducto</h3>
+            <p>Deliciosa cocina japonesa, ingredientes frescos y atención impecable en un espacio moderno y tranquilo.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/kefesas">
+        <img src="imagenes/aguas.jpg" alt="">
+        <div class="card-content">
+            <h3>Ke Fresas Ojo de Agua</h3>
+            <p>La marca de fresas con crema más exitosa de México, ahora en su sucursal Ojo de Agua, te invita a disfrutar sus irresistibles preparados. Frescura, sabor y tradición en cada cucharada.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/RestauranteGuille?locale=es_LA">
+        <img src="imagenes/guille.jpg" alt="">
+        <div class="card-content">
+            <h3>Restaurante Guille</h3>
+            <p>Restaurante gourmet que fusiona lo mejor de la cocina mexicana con cortes argentinos premium, en un ambiente elegante y acogedor.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/tacuradaOjoDeAgua">
+        <img src="imagenes/tucu.jpg" alt="">
+        <div class="card-content">
+            <h3>Tacurada Suc Ojo de Agua</h3>
+            <p>Tacurada sucursal Ojo de Agua te ofrece los mejores tacos de mariscos, preparados al momento con sabor auténtico y fresco. ¡Ven y disfruta el verdadero sabor del mar!</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/yushijirotonanitla/?locale=es_LA">
+        <img src="imagenes/yushihiro.jpg" alt="">
+        <div class="card-content">
+            <h3>Yushijiro Tonanitla</h3>
+            <p>Experiencia japonesa auténtica con sushi de calidad y un ambiente acogedor en el corazón de Tonanitla</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/The-beatledillas/100064103980537/">
+        <img src="imagenes/escarabajos.jpg" alt="">
+        <div class="card-content">
+            <h3>The beatledillas</h3>
+            <p>Cocina de quesadillas y antojos mexicanos con el sabor tradicional que te hará cantar. ¡Ambiente inspirado en The Beatles y comida que conquista paladares!</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/Taqueria-El-Infiernillo/61577661387032/#">
+        <img src="imagenes/diablito.jpg" alt="">
+        <div class="card-content">
+            <h3>Taqueria El Infiernillo</h3>
+            <p>Taquería El Infiernillo en Ojo de Agua te ofrece el auténtico sabor mexicano con cochinita, enchiladas y mucho más. ¡Puro sabor ardiente!</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="hero">
+    <h1>Educación y capacitación</h1>
+</section>
+
+
+<section class="contenedor">
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/Vive-Coaching-M%C3%A9xico-Centro-de-Desarrollo-y-Transformaci%C3%B3n">
+        <img src="imagenes/vive.jpg" alt="">
+        <div class="card-content">
+            <h3>Vive Coaching México</h3>
+            <p>Centro de Desarrollo y Transformación Humana enfocado en coaching personal y profesional. Acompañamos tu crecimiento con herramientas que inspiran cambios reales y duraderos.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="hero">
+    <h1>Eventos y entretenimiento</h1>
+</section>
+
+<section class="contenedor">
+
+    <div class="card">
+	<a href="https://www.facebook.com/minimotosmotopeques">
+        <img src="imagenes/moto.jpg" alt="">
+        <div class="card-content">
+            <h3>Mini Motos Moto Peques</h3>
+            <p>Venta de minimotos, cuatrimotos y motos eléctricas para niños. Diversión segura, con estilo y al mejor precio.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://magiceventosinfantiles.com/">
+        <img src="imagenes/magic.jpg" alt="">
+        <div class="card-content">
+            <h3>Magic Ojo de Agua</h3>
+            <p>Salón de fiestas infantiles con juegos, diversión y un ambiente seguro para celebrar momentos inolvidables con los más pequeños.</p>
+        </div>
+    </div>
+
+
+</section>
+
+
+<section class="hero">
+    <h1>Gobierno y comunidad</h1>
+</section>
+
+<section class="contenedor">
+
+    <div class="card">
+	<a href="https://tecamac.gob.mx/">
+        <img src="imagenes/tecamac.jpg" alt="">
+        <div class="card-content">
+            <h3>Ayuntamiento Tecámac</h3>
+            <p>Gobierno municipal que trabaja por el bienestar, desarrollo y seguridad de la comunidad de Tecámac.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/GuardiaCivilTecamac/?locale=es_LA">
+        <img src="imagenes/estrella.jpg" alt="">
+        <div class="card-content">
+            <h3>Guardia Civil Tecámac 2025-2027</h3>
+            <p>Corporación de seguridad municipal que protege a la comunidad con patrullajes, atención inmediata y acciones preventivas.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/Proteccion-Civil-Y-Bomberos-Tecamac/100064860933521/?locale=es_LA">
+        <img src="imagenes/cosarara.jpg" alt="">
+        <div class="card-content">
+            <h3>Protección Civil Y Bomberos Tecámac</h3>
+            <p>Equipo comprometido con la prevención, atención de emergencias y salvaguarda de la población ante cualquier riesgo o desastre. Siempre listos para servir.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="hero">
+    <h1>Hogar y construcción</h1>
+</section>
+
+<section class="contenedor">
+
+    <div class="card">
+	<a href="https://www.facebook.com/ecoplagmx">
+        <img src="imagenes/ecoplac.jpg" alt="">
+        <div class="card-content">
+            <h3>Ecoplag Control de Plagas</h3>
+            <p>Control de plagas ecológico y seguro. Soluciones efectivas sin dañar el medio ambiente, ideales para hogares, negocios y áreas sensibles.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/people/Colchones-vi-rey-oficial/100067671741528/?locale=es_LA">
+        <img src="imagenes/colchones.jpg" alt="">
+        <div class="card-content">
+            <h3>Colchones Vi-rey</h3>
+            <p>Tienda de colchones al mayoreo y menudeo. Calidad, confort y los mejores precios para tu descanso.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/p/MD-Muebles-Dise%C3%B1o-Tecamac-100090388805684/">
+        <img src="imagenes/md.jpg" alt="">
+        <div class="card-content">
+            <h3>MD Muebles Diseño Tecamac</h3>
+            <p>Fabricamos muebles a precio de fábrica y a medida, con entrega directa y pago contra entrega en efectivo. Ofrecemos cocinas integrales, roperos, tocadores y más, diseñados para renovar tu hogar</p>
+        </div>
+    </div>
+
+     <div class="card">
+	<a href="https://www.facebook.com/comercializadoraofic?locale=es_LA">
+        <img src="imagenes/ofic.jpg" alt="">
+        <div class="card-content">
+            <h3>Ofic</h3>
+            <p>Nos esforzamos para tener una colección de piezas únicas para transformar cualquier atmósfera, ideales para hogares, restaurantes u hoteles.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/alcocer.acabados.en.madera">
+        <img src="imagenes/alcocer.jpg" alt="">
+        <div class="card-content">
+            <h3>Alcocer Acabados en Madera</h3>
+            <p>Expertos en carpintería y muebles a medida con calidad, diseño y acabados profesionales en madera.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="hero">
+    <h1>Salud y bienestar</h1>
+</section>
+
+<section class="contenedor">
+
+    <div class="card">
+	<a href="https://www.masvidamassalud.com/">
+        <img src="imagenes/vidasalud.jpg" alt="">
+        <div class="card-content">
+            <h3>Más Vida y Salud</h3>
+            <p>Enfermería especializada en cuidados de salud, atención a domicilio, control de signos vitales, inyecciones, curaciones y más. Cuidamos de ti con profesionalismo y calidez.</p>
+        </div>
+    </div>
+
+    <div class="card">
+	<a href="https://www.facebook.com/SuperHerbalOficial/">
+        <img src="imagenes/super.jpg" alt="">
+        <div class="card-content">
+            <h3>Super Herbal</h3>
+            <p>Tienda naturista con amplia variedad de suplementos, vitaminas, tés y productos naturales para cuidar tu salud de forma integral y equilibrada.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="https://www.cruzrojamexicana.org.mx/?sedeId=33">
+        <img src="imagenes/laroja.jpg" alt="">
+        <div class="card-content">
+            <h3>Cruz Roja Ojo de Agua</h3>
+            <p>Brindamos atención médica, urgencias, primeros auxilios y apoyo humanitario con profesionalismo, compromiso y vocación de servicio. Siempre listos para ayudar.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="hero">
+    <h1>Servicios profesionales</h1>
+</section>
+
+<section class="contenedor">
+
+    <div class="card">
+        <img src="imagenes/luna.jpg" alt="">
+        <div class="card-content">
+            <h3>Asesora Ivonne Luna</h3>
+            <p>Especialista en compra, venta y renta de propiedades. Te acompaño con atención personalizada para encontrar el hogar o inversión ideal, con seguridad y confianza.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes/3.jpg" alt="">
+        <div class="card-content">
+            <h3>ahora son 3</h3>
+            <p>Con más de 20 años de experiencia en el sector gallístico, en Ahora Son 3 cuidamos la salud, seguridad y rendimiento de tu gallera. Somos tu mejor aliado en nutrición, clínica, zootecnia y bioseguridad.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes/om.jpg" alt="">
+        <div class="card-content">
+            <h3>OM Trámites</h3>
+            <p>OM Tramites Vehiculares te ofrece todo tipo de gestiones vehiculares desde altas y bajas de placas, cambio de propietario</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="https://kaisasolucionesinmobiliarias.com/">
+        <img src="imagenes/kansa.jpg" alt="">
+        <div class="card-content">
+            <h3>Kaisa Soluciones Inmobiliarias</h3>
+            <p>Inmobiliaria confiable que te acompaña en la compra, venta o renta de tu propiedad. Experiencia, seguridad y atención personalizada en cada paso.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="https://www.facebook.com/IlumAgenciaConsultora">
+        <img src="imagenes/ilum.jpg" alt="">
+        <div class="card-content">
+            <h3>ILum</h3>
+            <p>Agencia especializada en marketing digital, con soluciones creativas y estratégicas para hacer crecer tu marca y conectar con tu público.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="https://logisticatiburonblanco.com/">
+        <img src="imagenes/Logo.jpg" alt="https://logisticatiburonblanco.com/">
+        <div class="card-content">
+            <h3>Logística tiburón blanco</h3>
+            <p>Logística Tiburón Blanco ofrece soluciones eficientes en transporte, distribución y manejo de mercancías. Rapidez, confianza y fuerza que mueve tu negocio.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="imagenes/gm.jpg" alt="">
+        <div class="card-content">
+            <h3>GM Contabilidad Integral</h3>
+            <p>GM Contabilidad Integral te ofrece servicios contables y fiscales confiables para personas físicas y morales. Experiencia, profesionalismo y atención personalizada para mantener tu negocio en orden.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+
+    <div class="iconos">
+
+        <a href="tel:+521234567890" class="icono">
+            <i class="fas fa-phone"></i>
+        </a>
+
+        <a href="mailto:correo@gmail.com" class="icono">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://wa.me/521234567890" class="icono">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 LOCALPLACE
+</footer>
+
+<script>
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(e){
+        const destino = this.getAttribute("href");
+
+        if(destino.startsWith("#")){
+            e.preventDefault();
+            document.querySelector(destino)
+            .scrollIntoView({behavior:"smooth"});
+        }
+    });
+});
+
+
+const tarjetas = document.querySelector('.tarjetas');
+const btnIzquierda = document.querySelector('.izquierda');
+const btnDerecha = document.querySelector('.derecha');
+
+let posicion = 0;
+const desplazamiento = 270; // ancho tarjeta + separación
+
+btnDerecha.addEventListener('click', () => {
+    posicion -= desplazamiento;
+    tarjetas.style.transform = `translateX(${posicion}px)`;
+});
+
+btnIzquierda.addEventListener('click', () => {
+    posicion += desplazamiento;
+
+    if(posicion > 0){
+        posicion = 0;
+    }
+
+    tarjetas.style.transform = `translateX(${posicion}px)`;
+});
+
+
+</script>
+
+</body>
+</html>
